@@ -123,7 +123,7 @@ $(BUILDDIR)/opensbi-prepare-checkout-stamp:
 	@echo "$(COLOUR_GREEN)Checking out OpenSBI for $(BOARD)$(END_COLOUR)"
 	@mkdir -p $(BUILDDIR)
 	@git clone https://github.com/riscv-software-src/opensbi.git $(BUILDDIR)/opensbi
-	@cd $(BUILDDIR)/opensbi && git checkout a2b255b
+	@cd $(BUILDDIR)/opensbi && git checkout 43cace6c3671e5172d0df0a8963e552bb04b7b20
 	@touch $@
 
 
